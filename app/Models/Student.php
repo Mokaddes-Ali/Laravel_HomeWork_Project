@@ -16,35 +16,20 @@ class Student extends Model
      */
     protected $fillable = [
         'name',
-        'email',
-        'phone',
-        'address',
         'date_of_birth',
         'gender',
-        'course',
-        'year',
-        'nationality',
-        'language',
-        'blood_group',
+        'address',
         'religion',
-        'hobbies',
-        'parents_info',
-        'emergency_contact',
-        'profile_image',
-        'is_active',
+        'nationality',
+        'email',
+        'phone',
+        'parents_name',
+        'parents_phone',
+        'course',
+       'admission_date',
+        'admission_fee',
         'additional_notes',
-        'guardian_name',
-        'guardian_phone',
-        'guardian_address',
-        'guardian_relation',
-        'scholarship_status',
-        'admission_year',
-        'graduation_year',
-        'previous_education',
-        'extracurricular_activities',
-        'academic_achievements',
-        'transportation_mode',
-        'health_issues',
+        'profile_image',
     ];
 
     /**
@@ -54,8 +39,6 @@ class Student extends Model
      */
     protected $casts = [
         'date_of_birth' => 'date',
-        'is_active' => 'boolean',
         'admission_year' => 'date',
-        'graduation_year' => 'date',
     ];
 }
