@@ -1,5 +1,5 @@
 <x-app-layout>
-<div class="container mx-auto">
+<div class="container mx-auto w-screen">
     <h1 class="text-2xl font-bold mb-4">Add New Student</h1>
     <form action="{{ route('students.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -142,11 +142,11 @@
             @enderror
         </div>
 
-        <!-- Field 14: additional_notes -->
+        <!-- Field 14: aditional_notes -->
         <div class="mb-4">
-            <label for="additional_notes" class="block text-sm font-medium text-gray-700">Additional Notes</label>
-            <input type="text" name="additional_notes" id="additional_notes" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" value="{{ old('additional_notes') }}">
-            @error('additional_notes')
+            <label for="aditional_note" class="block text-sm font-medium text-gray-700">Aditional Notes</label>
+            <input type="text" name="aditional_note" id="aditional_note" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" value="{{ old('aditional_note') }}">
+            @error('aditional_note')
                 <span class="text-red-500 text-xs">{{ $message }}</span>
             @enderror
         </div>

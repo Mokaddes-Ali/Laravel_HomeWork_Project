@@ -42,9 +42,9 @@ class StudentController extends Controller
     'parents_name' => 'required',
     'parents_phone' => 'required',
     'course' => 'required',
-    'admission_date' => 'required|date_format:Y',
+    'admission_date' => 'required',
     'admission_fee' => 'required',
-    'additional_notes' => 'nullable',
+    'aditional_note' => 'required',
     'profile_image' => 'nullable|mimes:jpeg,png,jpg|max:2048',
         ]);
 
@@ -62,7 +62,7 @@ class StudentController extends Controller
         $student->course = $request->course;
         $student->admission_date = $request->admission_date;
         $student->admission_fee = $request->admission_fee;
-        $student->additional_notes = $request->additional_notes;
+        $student->aditional_note = $request->aditional_note;
 
 
         if ($request->hasFile('profile_image')) {

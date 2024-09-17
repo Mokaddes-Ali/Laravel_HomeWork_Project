@@ -27,8 +27,8 @@ class Student extends Model
         'parents_phone',
         'course',
        'admission_date',
-        'admission_fee',
-        'additional_notes',
+        'aditional_note',
+        'additional_note',
         'profile_image',
     ];
 

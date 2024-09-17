@@ -24,9 +24,9 @@ return new class extends Migration
         $table->string('parents_name')->nullable();
         $table->string('parents_phone')->nullable();
         $table->string('course');
-        $table->string('admission_date')->nullable();
+        $table->string('admission_date');
         $table->string('admission_fee')->nullable();
-        $table->text('additional_notes')->nullable();
+        $table->text('aditional_note')->nullable();
         $table->string('profile_image')->nullable();
         $table->timestamps();
     });
