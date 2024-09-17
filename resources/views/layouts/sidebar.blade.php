@@ -8,7 +8,6 @@
             <div class="nav-profile-image">
               <img src="{{asset('admin')}}/assets/images/faces/face1.jpg" alt="profile" />
               <span class="login-status online"></span>
-
             </div>
             <div class="nav-profile-text d-flex flex-column">
               <span class="font-weight-bold mb-2">David Grey. H</span>
